@@ -58,7 +58,7 @@ public/
     ...
 ````
 
-#代码规范(参考nec方案)
+#代码规范(参考[nec](http://nec.netease.com/)方案)
 
 **文件引用顺序**
 
