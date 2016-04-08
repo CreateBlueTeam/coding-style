@@ -188,6 +188,7 @@ a.s-fc:hover { color: #fff; }
 **语义化**
 
 **布局 `.g-`**
+
 文档 `doc` `doc`
 头部 `head` `hd`
 主体 `body` `bd`
@@ -200,6 +201,7 @@ a.s-fc:hover { color: #fff; }
     
     
 **模块 `.m-` 元件 `.u-`**
+
 导航 `nav` `nav`
 子导航 `subnav` `snav`
 面包屑 `crumb` `crm`
@@ -230,6 +232,7 @@ a.s-fc:hover { color: #fff; }
 输入 `input` `ipt`
 
 **功能 `.f-`**
+
 浮动清除 `clearboth` `cl/clearfix`
 向左浮动 `floatleft` `fl`
 向右浮动 `floatright` `fr`
@@ -244,6 +247,7 @@ a.s-fc:hover { color: #fff; }
 字体粗细 `fontweight` `fw`
     
 **皮肤 `.s-`**
+
 字体颜色 `fontcolor` `color`
 背景 `background` `bg`
 背景颜色 `backgroundcolor` `bgc`
@@ -252,6 +256,7 @@ a.s-fc:hover { color: #fff; }
 边框颜色 `bordercolor` `bdc`
     
 **状态 `.z-`**
+
 选中 `selected` `sel`
 当前 `current` `crt`
 显示 `show` `show`
