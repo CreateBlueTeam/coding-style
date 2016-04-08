@@ -70,9 +70,10 @@ public/
 
 3. 皮肤型样式：如果产品需要换肤功能，那么我们需要将颜色、背景等抽离出来放在这里。
 ```html
-<link href="assets/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="assets/css/index.css" rel="stylesheet" type="text/css"/>
-<link href="assets/css/skin.css" rel="stylesheet" type="text/css"/>
+<link href="pablic/css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="pablic/css/global.css" rel="stylesheet" type="text/css"/>
+<link href="pablic/css/index.css" rel="stylesheet" type="text/css"/>
+<link href="pablic/css/theme.css" rel="stylesheet" type="text/css"/>
 ```
 **CSS内部的分类**
 
