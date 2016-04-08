@@ -56,7 +56,7 @@ public/
     ...
 ````
 
-#代码规范
+#代码规范(参考nec方案)
 
 ####分类
 **文件引用顺序**
@@ -82,3 +82,112 @@ public/
 5. 功能 `function` `.f-` ：使用率较高的样式,按需使用，具有固定样式表现
 6. 皮肤 `skin` `.s-` ：抽离皮肤型的样式，通常为文字色、背景色（图）、边框色等，非换肤型网站通常只提取文字色！
 7. 状态 `.z-` ：为状态类样式加入前缀，统一标识，方便识别，她只能组合使用或作为后代出现`.u-ipt.z-hover{} .m-list li.z-current{}`
+````css
+/* 重置 */
+div,p,ul,ol,li {
+    margin: 0;
+    padding: 0;
+}
+/* 默认 */
+strong,em {
+    font-style: normal;
+    font-weight: bold;
+}
+/* 布局 */
+.g-sd { 
+    float: left; 
+    width: 300px;
+}
+/* 模块 */
+.m-logo {
+    width: 200px;
+    height: 50px;
+}
+/* 元件 */
+.u-btn {
+    height: 20px;
+    border: 1px solid #333;
+}
+/* 功能 */
+.f-tac {
+    text-align: center;
+}
+.f-cl { 
+    content: ''; 
+    display: bolck;
+    height: 0;
+    overflow: visible;
+    clear: both;
+}
+/* 皮肤 */
+.s-fc,
+a.s-fc:hover { color: #fff; }
+/* 状态 */
+
+.u-ipt.z-on {
+    display: list-item;
+}
+````
+**命名书写**
+
+- 全部小写英文字母书写
+- class选择器用 `-` 链接
+- 模块、布局等区分必须添加注释,单独一行
+- 命名简短、符合语义
+- 组件样式带上组件名
+- 多个样式隔行书写、多个选择器隔行书写
+- 开头的 `{` 距离选择器一个半角空格
+- 结束的 `}` 单独一行并贴紧IDE
+- 样式书写顺序 `显示属性` > `自身属性` > `文本及修饰属性`
+- 样式尽量使用简写方式
+- 先写带有浏览器私有标志的，后写W3C标准的
+- 尽量不写,少些Hack
+
+````css
+/* head */
+
+.g-header {
+    height: 50px;
+    background-color: #5ac990;
+    color: #fff;
+}
+.g-container {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+.logo {
+    padding: 5px 0;
+}
+.g-header .g-nav {
+    float: right;
+    height: 100%;
+}
+.g-header .m-nav {
+    margin-right: 100px;
+}
+
+/* nav */
+
+.m-nav > li {
+    position: relative;
+    float: left;
+    padding: 0 5px;
+}
+.g-header .m-nav a {
+    display: block;
+    padding: 10px 25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /*background: #4ba422;*/
+}
+````
+
+**代码优化**
+
+- 值缩写
+````css
+.m-title {
+}
+````
