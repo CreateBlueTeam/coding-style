@@ -335,7 +335,7 @@ a.s-fc:hover { color: #fff; }
     -webkit-transition: width .5s linear;
 }
 ```
-- 避免好性能的属性
+- 避免耗性能的属性
 
 ```css
 /* expression */
