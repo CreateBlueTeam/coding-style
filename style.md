@@ -37,6 +37,7 @@ public/
 │   ├── m_global.css
 │   ├── global.min.css
 │   ├── m_global.min.css
+│   ├── index.css
 │   ├── theme.css
 │   ├── m_theme.css
 │   ├── theme.min.css
@@ -72,3 +73,12 @@ public/
 <link href="assets/css/index.css" rel="stylesheet" type="text/css"/>
 <link href="assets/css/skin.css" rel="stylesheet" type="text/css"/>
 ```
+**CSS内部的分类**
+
+1. 重置 `reset` 和默认 `base tags` ：消除默认样式和浏览器差异，并设置部分标签的初始样式，以减少后面的重复劳动
+2. 布局 `grid` `.g-` ：将页面分割为几个大块，通常有头部、主体、主栏、侧栏、尾部等！
+3. 模块 `module` `.m-`：比如导航、登录、注册、各种列表、评论、搜索等！
+4. 元件 `unit` `.u-` ：被重复用于各种模块中！比如按钮、输入框、loading、图标等！
+5. 功能 `function` `.f-` ：使用率较高的样式,按需使用，具有固定样式表现
+6. 皮肤 `skin` `.s-` ：抽离皮肤型的样式，通常为文字色、背景色（图）、边框色等，非换肤型网站通常只提取文字色！
+7. 状态 `.z-` ：为状态类样式加入前缀，统一标识，方便识别，她只能组合使用或作为后代出现`.u-ipt.z-hover{} .m-list li.z-current{}`
