@@ -58,7 +58,6 @@ public/
 
 #代码规范(参考nec方案)
 
-####分类
 **文件引用顺序**
 
 按照CSS的性质和用途，将CSS文件分成“公共型样式”、“特殊型样式”、“皮肤型样式”，并以此顺序引用（按需求决定是否添加版本号）。
@@ -123,7 +122,6 @@ strong,em {
 .s-fc,
 a.s-fc:hover { color: #fff; }
 /* 状态 */
-
 .u-ipt.z-on {
     display: list-item;
 }
@@ -189,5 +187,7 @@ a.s-fc:hover { color: #fff; }
 - 值缩写
 ````css
 .m-title {
+    padding: 5px 0 15px;
+    -webkit-transform: rotate();
 }
 ````
