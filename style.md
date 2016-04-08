@@ -27,7 +27,7 @@
 
 #文件结构
 ````
-public/
+src/  
 ├── css/
 │   ├── reset.css
 │   ├── m_reset.css
